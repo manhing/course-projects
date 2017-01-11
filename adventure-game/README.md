@@ -4,7 +4,7 @@
 **Description of what the program does from the user’s perspective:**
 - Our character wakes up from a long cryogenic sleep in the future. Many years have passed and his memory is hazy when he first wakes up. He wakes up to an abandoned spaceship. He must figure out who he is, why he is there, and complete objectives in order to navigate the ship back to his home planet. The user is prompted with an introduction and told they can type ‘help’ to see the list of available commands.
 - User is able to navigate through rooms using the command line to achieve certain objectives by typing n,s,e,w. 
-- User can encounter objects within the rooms and has the options to look at them, pick them up, or drop them. There is be a max weight of items a player can hold.
+- User can encounter objects within the rooms and has the options to look at them, pick them up, or drop them. There is a max weight of items a player can hold.
 - User can have a long-form description upon entering the room for the first time. A short-form description will appear each subsequent time he visits that particular room.
 - Objects can interact with certain other objects.
 - During object interactions and certain points in the game, there are animations to depict visually what is happening. 
