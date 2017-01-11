@@ -1,3 +1,0 @@
-name:login key
-description:This is a super secret login key that your captain was careless in hiding. It can be used to restart the ship.
-weight:1

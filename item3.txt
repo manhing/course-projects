@@ -1,3 +1,0 @@
-name:food
-description:This is some leftovers that someone left. It can be eaten to regain strength.
-weight:2

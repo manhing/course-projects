@@ -1,3 +1,0 @@
-name:blaster
-description:The blaster is a very powerful weapon that can vaporize any biological being.
-weight:3

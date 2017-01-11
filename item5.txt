@@ -1,3 +1,0 @@
-name:antidote
-description:This is an antidote your science officer has been working on to cure the crew in case they have been exposed to alien poison.
-weight:1

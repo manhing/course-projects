@@ -1,3 +1,0 @@
-name:id card
-description:This is your id card. It says your name is Leeroy Jenkins. It can be used to gain access to locked rooms.
-weight:1
