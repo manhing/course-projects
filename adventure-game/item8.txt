@@ -1,0 +1,3 @@
+name:fire extinguisher
+description:The fire extinguisher has been used quite often and is running low.
+weight:2

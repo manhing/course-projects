@@ -1,0 +1,90 @@
+1name:meter
+1description:The meter is for the ship's engine. It shows how much fuel is remaining in the current power core.
+1dependent:The meter shows that the ship is very low on fuel and will need a new power core.
+2name:terminal
+2description:The terminal controls most of the functions on the ship like navigation, sensors and atmospheric conditions.
+2dependent:It shows that the ship ran too low on power and will need to be restarted with the login key.
+3name:windshield
+3description:Through the ship's front windshield, you can see debris from many destroyed ships. In the distance is an Earth-like planet.
+3dependent:
+4name:scanner
+4description:The medical scanner is used to check the health of an individual. There is a saved scan of you. It says that you are malnourished and you have been exposed to alien poison which requires an antidote.
+4dependent:
+5name:fighter
+5description:This alien fighter seems to have been abandoned. You try everything you can to get it to turn on, but there is no use. It seems you must find another way.  
+5dependent:
+6name:cargo
+6description:You rummage around in a cargo bin. You don't find anything of interest here, just old spacecraft parts being shipped to the outer planets.  
+6dependent:
+7name:crate
+7description:You open this crate up to find another dummy crate filled with debris. Are they trying to hide something?
+7dependent:
+8name:list
+8description:You read a packing list that reads 50 4x4 feet wooden crates carrying humanitarian assistance items. Hmm...no mention of why a power core is in here. 
+8dependent:
+9name:log
+9description:You read the last entry by the guard and it mentions that the ship was under attack by an unknown attacker. There is no mention of anymore useful information.
+9dependent:
+10name:novel
+10description:A steamy romance novel. Possibly the guard's.
+10dependent:
+11name:menu
+11description:You view the menu posted on the wall. Looks like you missed steak night by one day.
+11dependent:
+12name:sanitizer
+12description:You use the hand sanitizer. It is no shower, but at least you feel cleaner than before. 
+12dependent:
+13name:sign
+13description:A safety sign on the wall reminds the cooks to wash their hands. 
+13dependent:
+14name:freezer
+14description:You step inside a vast freezer filled with cartons of food. You shut the door. It is too cold in there.
+14dependent:
+15name:foamies
+15description:It never hurts to have hearing protection! 
+15dependent:
+16name:flask
+16description:You pick up a flask with a foreign substance inside of it. There is a cap on the flask for a reason. Maybe you should move on before you get hurt. 
+16dependent:
+17name:microscope
+17description:You peek into the microscope and view what looks to be cells dividing. You wonder what types of experiments were going on in here.  
+17dependent:
+18name:monitor
+18description:You pull up a medical record of yourself. It says you are part of project 9A - Top Secret. You have no memory of this project. You thought you were just on a long space journey. 
+18dependent:
+19name:memo
+19description:You read a memorandum written by the Captain. He tells the crew they are on an important mission and have each been hand selected to carry out this mission.
+19dependent:
+20name:beer
+20description:A freshly opened beer. What a waste. 
+20dependent:
+21name:cannon
+21description:This weapon is too heavy and too much firepower for any living creature. Try something smaller like a blaster. 
+21dependent:
+22name:armor
+22description:This body armor is heavy and might slow you down. You decide to not put it on. 
+22dependent:
+23name:trash
+23description:You sift through the trashcan. This makes you feel dirty but you are desperate for clues. 
+23dependent:
+24name:mirror
+24description:You see yourself in the mirror for the first time since waking up. You don't look like you have aged but feel older. 
+24dependent:
+25name:picture
+25description:You walk over to your bunk and it was just how you left it. You stare at a picture of your family, your wife and son. 
+25dependent:
+26name:manual
+26description:You pick up a flight training manual with the specifications for different spacecraft. As you flip through the pages you start to remember these parameters. 
+26dependent:
+27name:diary
+27description:You see a diary of a fellow shipmate. You are curious and open it up. It mentions they have no idea where they are going or what their mission is.
+27dependent:
+28name:screen
+28description:A computer screen dispays the status of the ship. There is a warning going off on several rooms. 
+28dependent:
+29name:notebook
+29description:This is the Captain's notebook. You don't have time to read it all, but flip to the last entry and notice that he doesn't agree with the Admiral over the mission. 
+29dependent:
+30name:manifest
+30description:A passenger manifest of the flight crew. You notice your name isn't listed on there. 
+30dependent:

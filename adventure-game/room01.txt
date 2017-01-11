@@ -1,0 +1,11 @@
+name:stowage
+long:This isn’t just any storage room. You walk into a room that was turned inside-out for something significant. Why is there a hundred crates all labeled the same, “Medical Supplies”? On the ground is the contents of these boxes and it is filled with asteroid dust. Then you walk around the aisle and notice a faint high pitch noise coming from one of the boxes. Is this why the aliens took the ship over? Let’s check it out to see what it does. There is a door to the North, South and East.
+dependent:
+short:You are in the stowage. There are doors to the north, east and south.
+item:power core
+doorn:true
+doore:true
+doors:true
+doorw:false
+feature1:crate
+feature2:list

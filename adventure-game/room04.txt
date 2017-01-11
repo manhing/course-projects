@@ -1,0 +1,11 @@
+name:galley
+long:Fire! You panic and realize the galley fire system is damaged. You must look for a way to put this fire out or you could be space debris soon. It appears that the stove was left on when the ship was evacuated. This makes you realize the ship hadn’t been evacuated for long before you woke up. Did they forget about you? Maybe there are others still on the ship. You calm your mind and focus on the task at hand. There is a door to the South.
+dependent:
+short:You are in the galley. There is a door to the south.
+item:fire extinguisher
+doorn:false
+doore:false
+doors:true
+doorw:false
+feature1:sign
+feature2:freezer
