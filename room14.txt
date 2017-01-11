@@ -1,0 +1,11 @@
+name:bridge
+long:You have entered the bridge, the main control center for the ship’s navigation and weapons. Lights from the various systems are flashing and there are multiple display screens showing the status of the ship’s systems. There is a room to the South and to the East.
+dependent:A chair, presumably the Captain’s chair, slowly turns around. A creature you haven’t seen before is sitting in it. You now know why the ship is abandoned, it must have been an hostile attack from these aliens. Anger builds up inside of you instantly. In order to defeat this creature you must use a weapon and be strong enough to fight. The alien stands up, speaks a language you do not understand and starts approaching you in a hostile manner. You are not afraid to die and know what you must do to take this ship back.
+short:You are in the bridge. There are doors to the east and south.
+item:
+doorn:false
+doore:true
+doors:true
+doorw:false
+feature1:terminal
+feature2:windshield

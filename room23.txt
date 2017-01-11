@@ -1,0 +1,11 @@
+name:general quarters 2
+long:You enter another room with bunks, some desks and seating. The sign on the door says, “General Quarters #2”. None of the beds are made as if everyone was woken up in the middle of the night. There is just one flight suit hanging on the wall. A wall of pictures lines the back of the room. You walk towards them and begin to recognize some faces. They were your friends apparently. You see yourself standing in front of a light cruiser starfighter, helmet in hand and wearing a flight suit. Maybe if you look closer you could view more of the pictures. There is a door to the South and West.
+dependent:
+short:You are in the general quarters 2. There are doors to the south and west.
+item:
+doorn:false
+doore:false
+doors:true
+doorw:true
+feature1:diary
+feature2:screen

@@ -1,0 +1,3 @@
+name:spacesuit
+description:This is a spacesuit that can protect your from harsh environments and a wide range of atmospheric pressures.
+weight:5

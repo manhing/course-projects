@@ -1,0 +1,11 @@
+name:science lab
+long:Even though the sign on the door says restricted access, the door opens. You enter what looks to be some type of laboratory for scientific experiments. The walls are lined with chemistry equipment, with different flasks, beakers, test tubes and other apparatuses. In the middle of the room are workstations of various different experiments. You walk up to one of the tables and see a folder labeled “Experiment X-04”. You open the folder and read, “Soldier Hibernation Treatment”. You read the document and realize they lied to you about the space journey hibernation. Were you being experimented on? Did something go wrong and that’s why they didn’t wake you up? There is a room to the North and South.
+dependent:
+short:You are in the science lab. There are doors to the north and south.
+item:antidote
+doorn:true
+doore:false
+doors:true
+doorw:false
+feature1:flask
+feature2:microscope

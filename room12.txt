@@ -1,0 +1,11 @@
+name:sickbay
+long:The room in which you woke is the sickbay. It is a nice clean and tidy room. There are many medical devices and tools neatly in their place. The medical scanner and the monitor catches your eye. There is a room to the North, South and West.
+dependent:
+short:You are in the sickbay. There are doors to the north, south and west.
+item:
+doorn:true
+doore:false
+doors:true
+doorw:true
+feature1:scanner
+feature2:monitor

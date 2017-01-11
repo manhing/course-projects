@@ -1,0 +1,11 @@
+name:captain's quarters
+long:It appears the poison is what finally killed him. A terrible way for such an accomplished officer to die. You compose yourself, gather your thoughts and focus. You know what you must do. Get this ship home. If only you could find a way to activate the bridge controls. There is a door to the West.
+dependent:
+short:You are in the captain's quarters. There is a door to the west.
+item:login key
+doorn:false
+doore:false
+doors:false
+doorw:true
+feature1:notebook
+feature2:manifest
