@@ -13,4 +13,4 @@
 - Type "make" to run the makefile.
 - The executable program is named "game".
 - After compiling, type "./game" to start the program.
-- The introduction will run ("Omicron" was our group name) and type "help" to view the various commands. 
+- The introduction animation will run ("Omicron" was our group name) and then you can type "help" to view the various commands. 
