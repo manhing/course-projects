@@ -9,13 +9,13 @@ Technologies used: Node.js, Express.js, QuickBlox
 **GET: http://{URL}:{port}/food/**
 + This will retrieve all records in the food-rating table
 + The data retrieved will show:
-..* _id
-..* foodname
-..* price
-..* rating
-..* restaurantname
-..* city
-..* state
+++ _id
+++ foodname
+++ price
+++ rating
+++ restaurantname
+++ city
+++ state
 
 **POST: http://{URL}:{port}/food/**
 + This allows you to add new records to the food-rating table
