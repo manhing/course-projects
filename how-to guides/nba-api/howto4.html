@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>How to use NBA.com's API</title>
+	<meta name="description" content="How to use NBA.com's API">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+</head>
+<body>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="howto.html">Home <span class="sr-only">(current)</span></a></li>
+      </ul>
+    </div>
+  </nav>
+
+    <div class="container">
+
+      <div class="blog-header">
+        <h1 class="blog-title">How to use NBA.com's API</h1>
+        <p class="lead blog-description">by Manhing Lei</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">Explore to Learn More</h2>
+            <p class="blog-post-meta">At this point, I can spoon feed you by listing the formats for each and every parameter value, such as any time a season is used as a parameter, you have to format the value as "2014-15", not "2014-2015", not "14-15", not "2014-5". But I won't do that. I don't want to give you the fish. I want to teach you how to fish. To do this, let's explore the website itself.
+
+            <p>I am still at Quincy Acy's player page. If you scroll down, you will see plenty of statistics. Where did they come from? Did a web developer type all those numbers in? Of course not, don't be ridiculous! These statistics are dynamically populated by having a server do exactly what we did manually in the previous page.
+
+            <p>In your browser, right-click anywhere on the page. In Chrome, select <b>Inspect</b>. In FireFox and Internet Explorer, select <b>Inspect Element</b>. Go to the <b>Network</b> tab. And if you have it, select <b>XHR</b>. This is where you can watch the magic happen.
+
+            <p>While we're still on Quincy's stats page, reload it. Oooooh, do you see all that? This is how it looks in FireFox. Chrome should look similar.
+
+            <div>
+              <p><img class="img-responsive" src="img/ff.PNG"></p>
+            </div>
+            <p>These are the things that loaded to make this page what it is. The second, fourth, and sixth items were queries to load the statistics. Does the format look familiar? It should. They have the endpoint, followed by a slash and a question mark. Then comes the parameters and then the values. Each parameter name and value pair are separated by an ampersand. So now, you know the format of <b>IsOnlyCurrentSeason</b> is an integer or a boolean... likely a boolean. <b>LeagueID</b> is a two-digit value, 00 being a valid value. I am pretty sure 00 represents the Men's NBA. There is likely a value for Women's NBA (WNBA) and the Developmental League (NBA D-League), maybe others.
+
+            <p> So what am I trying to say? Elias Uriegas and Nick Bottomley, the people whose work I linked earlier, did not work for NBA.com (or at least not to my knowledge). They merely clicked around the site watching what queries were sent each time a page loaded and gathered that information. You can too. Now you know how to fish!
+
+
+            
+          </div><!-- /.blog-post -->
+
+          <nav>
+            <ul class="pager">
+
+            </ul>
+          </nav>
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          
+          <div class="sidebar-module">
+            <h4>Jump to Section</h4>
+            <ol class="list-unstyled">
+              <li><a href="howto.html">Section 1 - Introduction</a></li>
+              <li><a href="howto2.html">Section 2 - What's Available?</a></li>
+              <li><a href="howto3.html">Section 3 - Give Me Data</a></li>
+              <li><a href="howto4.html">Section 4 - Explore to Learn More</a></li>
+            </ol>
+          </div>
+          
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+      <p>Powered by <a href="http://getbootstrap.com">Bootstrap</a> and <a href="https://twitter.com/mdo">@mdo</a>'s official template.</p>
+    </footer>
+
+
+
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>

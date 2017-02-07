@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>How to Interact with Google’s Cloud-Based Calendar with Python</title>
+	<meta name="description" content="How to Interact with Google’s Cloud-Based Calendar with Python">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+</head>
+<body>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="howto.html">Home <span class="sr-only">(current)</span></a></li>
+      </ul>
+    </div>
+  </nav>
+
+    <div class="container">
+
+      <div class="blog-header">
+        <h1 class="blog-title">How to Interact with Google’s Cloud-Based Calendar with Python</h1>
+        <p class="lead blog-description">by Manhing Lei</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">Common Errors and Special Cases</h2>
+            <p class="blog-post-meta">
+              Besides the usual HTTP request errors, there are a few notable special cases that may cause problems. We will modify our code to catch exceptions.
+            </p>
+            <div>
+              <p><img class="img-responsive" src="img/exceptioncode.png"></p>
+            </div>
+
+
+            <h3>Google account does not exist</h3>
+              <p> 
+                This is a response for when a Google account does not exist. It typically happens  when there is a typo.
+              </p>
+              <div>
+                <p><img class="img-responsive" src="img/error1.png"></p>
+              </div>
+
+            <h3>Google calendar is not public</h3>
+              <p> 
+                This is a response for when a Google account does exist, but is not public.
+              </p>
+              <div>
+                <p><img class="img-responsive" src="img/error2.png"></p>
+              </div>
+
+            <h3>All-day events</h3>
+              <p>
+                All-day events do not have the same response key as a typical event with clearly defined start and end times.
+              </p>
+
+              <div>
+                <p><img class="img-responsive" src="img/alldayresponse.png"></p>
+              </div>
+
+              <p>
+                As you can see, the start and end does not have a time. In all-day events, it uses <b>date</b> as the key as opposed to <b>dateTime</b> in the previous examples.
+              </p>
+
+            <h3>No events for that particular day</h3>
+              <p>
+                This is a response for when there are no events.
+              </p>
+
+              <div>
+                <p><img class="img-responsive" src="img/noeventsresponse.png"></p>
+              </div>
+
+              <p>
+                As you can see, the <b>items</b> array is empty.
+              </p>
+
+            <h3>Something is wrong with your API key</h3>
+              <p>
+                This is a response for when you either forget to send your API key or it no longer works.
+              </p>
+
+              <div>
+                <p><img class="img-responsive" src="img/badkeyresponse.png"></p>
+              </div>
+
+
+            
+
+
+
+            <br>
+          </div><!-- /.blog-post -->
+
+          <nav>
+            <ul class="pager">
+              <li><a href="howto4.html">Next</a></li>
+            </ul>
+          </nav>
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          
+          <div class="sidebar-module">
+            <h4>Jump to Section</h4>
+            <ol class="list-unstyled">
+              <li><a href="howto.html">Section 1 - Introduction and Set Up</a></li>
+              <li><a href="howto2.html">Section 2 - Search Events</a></li>
+              <li><a href="howto3.html">Section 3 - Common Errors and Special Cases</a></li>
+              <li><a href="howto4.html">Section 4 - More Neat Stuff</a></li>
+            </ol>
+          </div>
+          
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+      <p>Powered by <a href="http://getbootstrap.com">Bootstrap</a> and <a href="https://twitter.com/mdo">@mdo</a>'s official template.</p>
+    </footer>
+
+
+
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>

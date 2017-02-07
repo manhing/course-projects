@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>How to use NBA.com's API</title>
+	<meta name="description" content="How to use NBA.com's API">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+</head>
+<body>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+      </ul>
+    </div>
+  </nav>
+
+    <div class="container">
+
+      <div class="blog-header">
+        <h1 class="blog-title">How to use NBA.com's API</h1>
+        <p class="lead blog-description">by Manhing Lei</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">Introduction</h2>
+            <p class="blog-post-meta">The amount and quality of statistics available nowadays for each and every sport have become ridiculously extensive and rich. Professional coaches and managers at the highest levels are now using what are called "next-gen" stats to make game plans and in-game adjustments to improve the likelihood of success. "Next-gen" statistics are basically anything non-traditional like total distance ran during a game, average speed, etc. Examples of tradition statistics are points per game, rebounds per game, etc. Believe it or not, NBA.com provides both traditional and next-gen statistics for, well, the National Basketball Association and it is open to everyone. Player stats, game stats, situational stats--you name it, it can be found. You can access the statistics using their API for free and you are not required to have an API key, as far as I know. The uncertainty I expressed in my previous sentence is due to NBA.com's lack of official documentation. The lack of anything official raises a lot of questions. Is there a limit to the amount of queries a person or server can make? How many endpoints are there? What are the endpoints? What are the parameters needed? What format does the values have to be in for my query to work? How do I decipher the returned data?
+             </p>
+
+            <div>
+              <p><img class="img-responsive" src="img/nbastatshome.PNG"></p>
+            </div>
+
+            <p>In this how-to, we will build from the ground up to learn these things and, more importantly, how to figure it. Since most users of the API are learning as they go, I will, more importantly, show you how to explore and figure things out. In order to do that, you must have certain knowledge before we go on. You must be familiar with the game of basketball, at least with basical terminology. You must be comfortable making HTTP requests via GET (name-value pairs as a query in the URL), or at least not afraid to try. You must have an idea of what you're looking for.</p>
+
+            
+            
+            <p>Let's get started!</p>
+            
+          </div><!-- /.blog-post -->
+
+          <nav>
+            <ul class="pager">
+              <li><a href="howto2.html">Next</a></li>
+            </ul>
+          </nav>
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          
+          <div class="sidebar-module">
+            <h4>Jump to Section</h4>
+            <ol class="list-unstyled">
+              <li><a href="howto.html">Section 1 - Introduction</a></li>
+              <li><a href="howto2.html">Section 2 - What's Available?</a></li>
+              <li><a href="howto3.html">Section 3 - Give Me Data</a></li>
+              <li><a href="howto4.html">Section 4 - Explore to Learn More</a></li>
+            </ol>
+          </div>
+          
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+      <p>Powered by <a href="http://getbootstrap.com">Bootstrap</a> and <a href="https://twitter.com/mdo">@mdo</a>'s official template.</p>
+    </footer>
+
+
+
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>

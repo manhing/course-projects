@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>How to Interact with Google’s Cloud-Based Calendar with Python</title>
+	<meta name="description" content="How to Interact with Google’s Cloud-Based Calendar with Python">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+</head>
+<body>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+      </ul>
+    </div>
+  </nav>
+
+    <div class="container">
+
+      <div class="blog-header">
+        <h1 class="blog-title">How to Interact with Google’s Cloud-Based Calendar with Python</h1>
+        <p class="lead blog-description">by Manhing Lei</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">Introduction and Set Up</h2>
+              <h3>Introduction</h3>
+                <p class="blog-post-meta">
+                  Google Calendar is a popular cloud-based application for everyday people and for use as a corporate calendar. If you have a Google account, you have a Google Calendar. 
+                </p>
+
+                <p>
+                  This tutorial will teach you how to create a simple program to interact with one or more calendars at once. More specifically, we will concentrate on the events of public Google calendars. An event is anything on a calendar, like a lunch meeting on a day and time.
+                </p>
+
+                <p>
+                  We will use HTTP requests to use the API and write the program with Python. This particular implementation bypasses the use of authorization and authentication. As mentioned earlier, the limitation to this is that the calendar we are accessing must be public.
+                </p>
+
+                <p>
+                  If you want to interact with (limited access) calendars, use the OAuth2.0 way. <a href="https://www.youtube.com/watch?v=tNo9IoZMelI">This video</a> will help you get started, but this tutorial will not cover that particular implementation. 
+                </p>
+
+                <p>
+                  If this tutorial is not for you, please feel free to 
+                  <a href="https://developers.google.com/google-apps/calendar/overview">click here for a general overview</a> and you can go from there.
+                </p>
+
+                <p>
+                  As you can see, Google provides documentation to various other implementations, so you can pick from a variety of languages in which to develop your program. If you choose to continue with this particular implementation, I encourage you to visit <a href="https://developers.google.com/google-apps/calendar/v3/reference/events/list">this page</a> and skim through.
+                </p>
+
+                <p>
+                  Once completed, this program can be passed on to your friends or colleagues without downloading anything else. Other implementations will require you to download a client for OAuth2.0 authentication.
+                </p>
+
+              <h3>Set Up</h3>
+                <p>
+                  The first step is to sign up for an API key. This key will be used instead of OAuth2.0 authentication. Go here and follow the prompts. If you mess up, don't worry. You can repeat the process. The goal is to end up with a "Server" API key. Once done, if you look up your list of credentials, you should have one of these:
+
+                </p>
+
+                <div>
+                  <p><img class="img-responsive" src="img/apikey.png"></p>
+                </div>
+                <br>
+                <p>
+                  In regards to usage limits, quotas and expiration of the API key, I could not find any documentation. I assume there has to be some limit. With the amount of testing I've done in a day, I have easily used the key 20 times in one day. This is plenty for any normal user.
+                </p>
+                <br>
+                <p>
+                  Now, let's make our Google calendar public. Go to your Google calendar app. Find the "My calendars" drop down and select "Settings".
+                </p>
+                <div>
+                  <p><img class="img-responsive" src="img/minicalendar.png"></p>
+                </div>
+                <br>
+                <p>
+                  Click on "Share this calendar".
+                </p>
+                <div>
+                  <p><img class="img-responsive" src="img/sharecal.png"></p>
+                </div>
+                <br><br>
+                <p>
+                  Check the checkbox next to "Make this calendar public".
+                </p>
+                <div>
+                  <p><img class="img-responsive" src="img/calpublic.png"></p>
+                </div>
+
+
+                <br>
+                <br>
+                <p>Assuming you have basic Python experience, we are all set. Let's get started!</p>
+                <br>
+            
+          </div><!-- /.blog-post -->
+
+          <nav>
+            <ul class="pager">
+              <li><a href="howto2.html">Next</a></li>
+            </ul>
+          </nav>
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          
+          <div class="sidebar-module">
+            <h4>Jump to Section</h4>
+            <ol class="list-unstyled">
+              <li><a href="howto.html">Section 1 - Introduction and Set Up</a></li>
+              <li><a href="howto2.html">Section 2 - Search Events</a></li>
+              <li><a href="howto3.html">Section 3 - Common Errors and Special Cases</a></li>
+              <li><a href="howto4.html">Section 4 - More Neat Stuff</a></li>
+            </ol>
+          </div>
+          
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+      <p>Powered by <a href="http://getbootstrap.com">Bootstrap</a> and <a href="https://twitter.com/mdo">@mdo</a>'s official template.</p>
+    </footer>
+
+
+
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>How to Interact with Google’s Cloud-Based Calendar with Python</title>
+	<meta name="description" content="How to Interact with Google’s Cloud-Based Calendar with Python">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+</head>
+<body>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="howto.html">Home <span class="sr-only">(current)</span></a></li>
+      </ul>
+    </div>
+  </nav>
+
+    <div class="container">
+
+      <div class="blog-header">
+        <h1 class="blog-title">How to Interact with Google’s Cloud-Based Calendar with Python</h1>
+        <p class="lead blog-description">by Manhing Lei</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">Search Events</h2>
+            <p class="blog-post-meta">
+              First, let's import a couple of Python libraries and set up a few variables.
+            </p>
+            
+            <div>
+              <p><img class="img-responsive" src="img/1.png"></p>
+            </div>
+
+            <p>
+              The <b>urllib2</b> library will help us with our HTTP request. The <b>json</b> library will help us parse the response from the API call.
+            </P>
+            <p>
+              We will store the Google account, the date for which we wish to search for events, and the time range in variables. The most interesting part of the code is line 12 where we store the Google account in a list. We can then interate through the list and request events from each of those Google accounts. This comes in handy when you are trying to set up a meeting with many people. You will see when they are not available.
+
+            <p>
+              Now, let's go ahead and request events for a calendar:
+            </p>
+            <div>
+              <p><img class="img-responsive" src="img/httpreq.png"></p>
+            </div>
+
+            <p>
+              We are looping through each Google account and requesting all events for that user for January 28, 2016. In this case, it's only one account.
+            </p>
+            <p>
+              Here is the response:
+            </p>
+            <div>
+              <p><img class="img-responsive" src="img/response1.png"></p>
+            </div>
+            <p>
+              Looking through the response, you can see that I had Foosball schedule from 2:00 pm to 3:00 pm. You can also see there's a lot of information an everyday person does not need to see. Let us only print out the name of the event and the start and end times.
+            </p>
+
+            <div>
+              <p><img class="img-responsive" src="img/event1.png"></p>
+            </div>
+            <p>
+              We parse the response. Here is the result:
+            </p>
+            <div>
+              <p><img class="img-responsive" src="img/response2.png"></p>
+            </div>
+
+            <p>
+              Let's have some real fun now. Let's add a second Google account, separated by a space, like this:
+            </p>
+
+            <div>
+              <p><img class="img-responsive" src="img/multiacct.png"></p>
+            </div>
+
+            <p>
+              Re-run the program and you'll get something like this:
+            </p>
+
+            <div>
+              <p><img class="img-responsive" src="img/response3.png"></p>
+            </div>
+
+
+            <p>
+              Congratulations! Now you are ready to more effectively stalk that one person who happens to have a public Google calendar.
+            </p>
+
+            <br>
+          </div><!-- /.blog-post -->
+
+          <nav>
+            <ul class="pager">
+              <li><a href="howto3.html">Next</a></li>
+            </ul>
+          </nav>
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          
+          <div class="sidebar-module">
+            <h4>Jump to Section</h4>
+            <ol class="list-unstyled">
+              <li><a href="howto.html">Section 1 - Introduction and Set Up</a></li>
+              <li><a href="howto2.html">Section 2 - Search Events</a></li>
+              <li><a href="howto3.html">Section 3 - Common Errors and Special Cases</a></li>
+              <li><a href="howto4.html">Section 4 - More Neat Stuff</a></li>
+            </ol>
+          </div>
+          
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+      <p>Powered by <a href="http://getbootstrap.com">Bootstrap</a> and <a href="https://twitter.com/mdo">@mdo</a>'s official template.</p>
+    </footer>
+
+
+
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>

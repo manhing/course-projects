@@ -1,0 +1,1 @@
+##A quick guide on how to extract data from NBA.com's API.

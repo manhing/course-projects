@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>How to use NBA.com's API</title>
+	<meta name="description" content="How to use NBA.com's API">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+</head>
+<body>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="howto.html">Home <span class="sr-only">(current)</span></a></li>
+      </ul>
+    </div>
+  </nav>
+
+    <div class="container">
+
+      <div class="blog-header">
+        <h1 class="blog-title">How to use NBA.com's API</h1>
+        <p class="lead blog-description">by Manhing Lei</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">Give Me Data</h2>
+            <p class="blog-post-meta">Let's get some data. First, I will show you a way that is not all that great for beginners. I simply typed in:
+              <pre>http://stats.nba.com/stats/commonplayerinfo/?PlayerID=203112</pre>
+              into the address bar of my browser. This is what I got back as a response:
+
+            <div>
+              <p><img class="img-responsive" src="img/quincyacy3.PNG"></p>
+            </div>
+
+            <p>If you are experienced at reading this stuff, this is likely perfectly fine. For everyone else, it is VERY ugly. It's great that we got what we were looking for, but it's so cluttered. Good luck deciphering what's what.
+
+            <p>Here's is how to get the response in a format that is easier to read. Using Google Chrome's Advanced REST Client, I sent in a GET request like so:
+
+            <div>
+              <p><img class="img-responsive" src="img/ARC.PNG"></p>
+            </div>
+
+            <p>And this is how it looks when I get back as a response. It has color and has an outline format. It is very easy to read.
+
+            <div>
+              <p><img class="img-responsive" src="img/ARC2.PNG"></p>
+            </div>
+                        <div>
+              <p><img class="img-responsive" src="img/ARC3.PNG"></p>
+            </div>
+                        <div>
+              <p><img class="img-responsive" src="img/ARC4.PNG"></p>
+            </div>
+
+            <p>You will notice the <b>headers</b> and the <b>rowSet</b> are equal in number. Do I need to explicitly tell you that the heading at position 0 is related to the data at position 0 in the rowSet? I hope not.
+
+
+
+            
+          </div><!-- /.blog-post -->
+
+          <nav>
+            <ul class="pager">
+              <li><a href="howto4.html">Next</a></li>
+            </ul>
+          </nav>
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          
+          <div class="sidebar-module">
+            <h4>Jump to Section</h4>
+            <ol class="list-unstyled">
+              <li><a href="howto.html">Section 1 - Introduction</a></li>
+              <li><a href="howto2.html">Section 2 - What's Available?</a></li>
+              <li><a href="howto3.html">Section 3 - Give Me Data</a></li>
+              <li><a href="howto4.html">Section 4 - Explore to Learn More</a></li>
+            </ol>
+          </div>
+          
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+      <p>Powered by <a href="http://getbootstrap.com">Bootstrap</a> and <a href="https://twitter.com/mdo">@mdo</a>'s official template.</p>
+    </footer>
+
+
+
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>

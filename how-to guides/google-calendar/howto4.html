@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>How to Interact with Google’s Cloud-Based Calendar with Python</title>
+	<meta name="description" content="How to Interact with Google’s Cloud-Based Calendar with Python">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+</head>
+<body>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="howto.html">Home <span class="sr-only">(current)</span></a></li>
+      </ul>
+    </div>
+  </nav>
+
+    <div class="container">
+
+      <div class="blog-header">
+        <h1 class="blog-title">How to Interact with Google’s Cloud-Based Calendar with Python</h1>
+        <p class="lead blog-description">by Manhing Lei</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">More Neat Stuff</h2>
+              <h3>HTML Link</h3>
+                <p class="blog-post-meta">
+                  If you were reading the full responses earlier in the tutorial, you may have noticed an html link, like this:
+
+                <div>
+                  <p><img class="img-responsive" src="img/htmllink.png"></p>
+                </div>
+                <p>
+                  Type that URL into a broswer and you can see a web-based representation of the event.
+
+                <div>
+                  <p><img class="img-responsive" src="img/htmlevent.png"></p>
+                </div>
+
+              <h3>Direct link to create an event</h3>
+                <p>
+                  A great way to advertise an event is with a direct link on a company's website. Users can simply click a hyperlink and are just one more click away from having an event added to their own calendar.
+                </p>
+                <p>
+                  Here is a sample template:
+                </p>
+                <pre><code>https://calendar.google.com/calendar/render?action=TEMPLATE&text=Sample+Event+Name&dates=20160527T124007/20160527T131507&details=text+for+details&location=Googleplex,+1600+Amphitheatre+Pkwy,+Mountain+View,+CA+94043#eventpage_6
+                </code></pre>
+
+                <p>
+                  Most of the values entered into the URL is self-explanatory except maybe the time zone. The <b>07</b> at the end of each dateTime denotes PDT.
+                </p>
+                <pre>dates=20160527T1240<b>07</b>/20160527T1315<b>07</b>
+                </pre>
+                
+                <p>
+                  This direct link will result in the following page with fields prefilled:
+                </p>
+                <div>
+                  <p><img class="img-responsive" src="img/googleevent.png"></p>
+                </div>
+
+            
+          </div><!-- /.blog-post -->
+
+          <nav>
+            <ul class="pager">
+
+            </ul>
+          </nav>
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          
+          <div class="sidebar-module">
+            <h4>Jump to Section</h4>
+            <ol class="list-unstyled">
+              <li><a href="howto.html">Section 1 - Introduction and Set Up</a></li>
+              <li><a href="howto2.html">Section 2 - Search Events</a></li>
+              <li><a href="howto3.html">Section 3 - Common Errors and Special Cases</a></li>
+              <li><a href="howto4.html">Section 4 - More Neat Stuff</a></li>
+            </ol>
+          </div>
+          
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+      <p>Powered by <a href="http://getbootstrap.com">Bootstrap</a> and <a href="https://twitter.com/mdo">@mdo</a>'s official template.</p>
+    </footer>
+
+
+
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>

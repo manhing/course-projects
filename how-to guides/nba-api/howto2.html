@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>How to use NBA.com's API</title>
+	<meta name="description" content="How to use NBA.com's API">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+</head>
+<body>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="howto.html">Home <span class="sr-only">(current)</span></a></li>
+      </ul>
+    </div>
+  </nav>
+
+    <div class="container">
+
+      <div class="blog-header">
+        <h1 class="blog-title">How to use NBA.com's API</h1>
+        <p class="lead blog-description">by Manhing Lei</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">What's available?</h2>
+            <p class="blog-post-meta">You might be asking, "If there is no documentation, how do I even know what information is available?" Luckily, there are people who have done some footwork for us. <a href="https://github.com/seemethere/nba_py/wiki/stats.nba.com-Endpoint-Documentation">Elias Uriegas' GitHub</a> lists many endpoints and their required parameters
+             to execute a query. <a href="https://www.npmjs.com/package/nba">Nick Bottomley created a Node.js wrapper.</a> Please feel free to look over their extensive lists. I can neither confirm nor deny that their lists combined are exhaustive. I am going to go out on a limb and say there may be more endpoints.
+             </p>
+
+
+            <p>For the purpose of this guide, I will start with baby steps and show you how to tie your shoes, and then eventually kick you out of the nest so you can fly on your own, without training wheels. Let's start with the most basic of queries; you know--the one with only one required parameter--the <b>commonplayerinfo</b>.</p>
+
+
+            <p><b>URL endpoint:</b> http://stats.nba.com/stats/commonplayerinfo
+            <br>
+            <b>Required Parameter(s):</b> PlayerID 
+
+            <p>OK, but where do I find a player's ID? Good question. First, let me show you what isn't the player ID. Go here:
+
+            <pre>http://stats.nba.com/players/</pre>
+            
+            <p>You should see a list of all active NBA players in alphabetical order by last name. The first name that shows up alphabetically is this chump named Quincy Acy. Let's click on his name. See that 2.3 points per game statistic? Chump status is confirmed.
+            
+            <div>
+              <p><img class="img-responsive" src="img/quincyacy.PNG"></p>
+            </div>
+
+            <p>But that's not why I brought you here. Look at the URL. The last part of the URL says <b>quincy_acy</b>. That is NOT the PlayerID! 
+              It would be unwise to use a combination of first and last names to be the identifier for a player because there are players with the same name. Now use your cursor to hover over any of the links under Quincy's picture, or click on one of them. If you clicked through, you will now notice a number in the URL. That is the PlayerID! In Quincy's case, his PlayerID is <b>203112</b>.
+
+            <div>
+              <p><img class="img-responsive" src="img/quincyacy2.PNG"></p>
+            </div>
+            
+          </div><!-- /.blog-post -->
+
+          <nav>
+            <ul class="pager">
+              <li><a href="howto3.html">Next</a></li>
+            </ul>
+          </nav>
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          
+          <div class="sidebar-module">
+            <h4>Jump to Section</h4>
+            <ol class="list-unstyled">
+              <li><a href="howto.html">Section 1 - Introduction</a></li>
+              <li><a href="howto2.html">Section 2 - What's Available?</a></li>
+              <li><a href="howto3.html">Section 3 - Give Me Data</a></li>
+              <li><a href="howto4.html">Section 4 - Explore to Learn More</a></li>
+            </ol>
+          </div>
+          
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+      <p>Powered by <a href="http://getbootstrap.com">Bootstrap</a> and <a href="https://twitter.com/mdo">@mdo</a>'s official template.</p>
+    </footer>
+
+
+
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>
